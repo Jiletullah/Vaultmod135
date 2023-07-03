@@ -21,8 +21,8 @@ country_event = {
 			name = "recruited_colonist"
 			duration = -1
 		}
-		add_treasury = -800
-		add_dip_power = -500
+		add_treasury = -500
+		add_dip_power = -300
 	}
 	option = {
 		name = colonial_office.1.range
@@ -33,29 +33,7 @@ country_event = {
 			name = "expanded_range"
 			duration = -1
 		}
-		add_treasury = -500
-		add_dip_power = -300
-	}
-	option = {
-		name = colonial_office.1.conquistador
-		define_conquistador = {
-			shock = 2
-			fire = 2
-			manuever = 2
-			siege = 0
-		}
-		add_treasury = -100
-		add_dip_power = -75
-	}
-	option = {
-		name = colonial_office.1.explorer
-		define_explorer = {
-			shock = 1
-			fire = 1
-			manuever = 4
-			siege = 0
-		}
-		add_treasury = -100
-		add_dip_power = -75
+		add_treasury = -200
+		add_dip_power = -100
 	}
 }

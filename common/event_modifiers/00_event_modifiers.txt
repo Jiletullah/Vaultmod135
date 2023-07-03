@@ -13867,11 +13867,15 @@ colonial_office_open = {
 }
 
 recruited_colonist = {
-	colonists = 1
+	may_explore = yes
+	colonists = 2
+	range = 0.33
+	global_colonial_growth = 25
 }
 
 expanded_range = {
-	range = 0.3
+	range = 0.33
+	cb_on_primitives = yes
 }
 
 iraqi_trade = {

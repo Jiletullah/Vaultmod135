@@ -8,22 +8,28 @@ country_decisions = {
 		allow = {
 			treasury = 500
 			OR = {
+				AND = {
+					tag = POR
+					adm_tech = 5
+				}
+				AND = {
+					tag = CAS
+					adm_tech = 6
+				}
+				AND = {
+					tag = ENG
+					adm_tech = 6
+				}
 				AND = { 
 					technology_group = western
 					adm_tech = 7
 				}
 				AND = {
 					adm_tech = 12
-					OR = {
-						technology_group = eastern
-						technology_group = ottoman
-						technology_group = muslim
-					}
 				}
 			}
 		}
 		effect = {
-			add_treasury = -500
 			add_country_modifier = {
 				name = "colonial_office_open"
 				duration = -1

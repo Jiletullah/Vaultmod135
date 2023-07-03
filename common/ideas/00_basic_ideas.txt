@@ -215,17 +215,20 @@ spy_ideas = {
 
 	efficient_spies = {
 		spy_offence = 0.5
-		siege_ability = 0.1
+		siege_ability = 0.15
+		technology_cost = -0.05
+
 	}	
 	
 	agent_training = {
+		movement_speed = 0.15
 		ae_impact = -0.33
 		diplomats = 1
 	}
 
 	vetting = {
 		global_spy_defence = 0.33
-		yearly_corruption = -0.2
+		yearly_corruption = -0.25
 	}
 	
 	privateers = {
@@ -249,56 +252,6 @@ spy_ideas = {
 		modifier = {
 			factor = 1.25
 			has_idea_group = aristocracy_ideas
-		}
-	}
-}
-
-
-diplomatic_ideas = {
-	category = DIP
-	bonus = {
-		reduced_stab_impacts = yes
-	}
-	
-	grand_banquets = {
-		diplomats = 2
-	}
-	foreign_embassies = {
-		envoy_travel_time = -0.25
-	}
-	cabinet = {
-		diplomatic_upkeep = 1
-		diplomatic_reputation = 2
-	}
-	benign_diplomats = {
-		improve_relation_modifier = 0.5
-	}
-	experienced_diplomats  = {
-		monthly_splendor = 2
-		monthly_favor_modifier = 0.33
-	}
-	flexible_negotiation = {
-		province_warscore_cost = -0.2
-		unjustified_demands = -0.5
-	}
-	diplomatic_corps = {
-		dip_tech_cost_modifier = -0.1
-	}
-
-	ai_will_do = {
-		factor = 0.5
-
-		modifier = {
-			factor = 2
-			is_emperor = yes
-		}
-		modifier = { 	
-			factor = 0.75 
-			NOT = { monthly_dip = 7 }
-		}
-		modifier = {
-			factor = 1.25
-			personality = ai_diplomat 
 		}
 	}
 }
@@ -431,7 +384,7 @@ trade_ideas = {
 	}
 
 	shrewd_commerce_practise = {
- 		global_trade_power = 0.2
+ 		global_own_trade_power = 0.25
   	}
   	free_trade = {
   		merchants = 1
@@ -445,11 +398,11 @@ trade_ideas = {
 		mercantilism_cost = -0.33
 	}
 	overseas_merchants = {
-		placed_merchant_power = 10
+		placed_merchant_power = 5
 		transfer_trade_power_reasons = 10
 	}
 	trade_manipulation = {
-		trade_steering = 0.3
+		trade_steering = 0.33
 	}
 	fast_negotiations = {
 		caravan_power = 0.1
@@ -572,73 +525,6 @@ economic_ideas = {
 	}
 }
 
-exploration_ideas = {
-	category = DIP
-	important = yes
-
-	bonus = {
-		cb_on_primitives = yes
-	}
-
-	quest_for_the_new_world	= {
-		may_explore = yes
-	}
-
-	colonial_ventures = {
-		colonists = 1
-	}
-	
-	overseas_exploration = {
-		range = 0.5
-	}
-	land_of_opportunity = {
-		global_colonial_growth = 30
-	}
-	factories  = {
-		colonists = 1
- 		envoy_travel_time = -0.3
- 	}
-	free_colonies = {
-		expel_minorities_cost = -1.0
-	}
-	global_empire = {
-		colonial_subject_type_upgrade_cost_modifier = -0.2
-		colonial_type_change_cost_modifier = -0.2
-	}
-
-	ai_will_do = {
-		factor = 0.1
-		modifier = {
-			factor = 1000
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			if = {
-				is_subject = yes
-				NOT = { is_colonial_nation = yes
-				}
-			}
-		}		
-		modifier = {
-			factor = 1000
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = SPA
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-			}
-		}
-	}
-}
 
 
 maritime_ideas = {
@@ -656,11 +542,11 @@ maritime_ideas = {
 	naval_attrition = -0.33
 	}
 	merchant_marine = {
-	global_sailors_modifier = 0.3
+	global_sailors_modifier = 0.20
 	}
 	sheltered_ports = {
 	global_ship_repair = 0.33
-	sailor_maintenance = -0.15
+	sailor_maintenance_modifer = -0.10
 	}
 	grand_navy = {
 	naval_maintenance_modifier = -0.1
@@ -672,6 +558,7 @@ maritime_ideas = {
 	}
 	sea_hawks = {
 	admiral_cost = -0.5
+	allowed_marine_fraction = 0.15
 	}
 	naval_fighting_instruction = {
 	navy_tradition_decay = -0.01
@@ -935,7 +822,7 @@ influence_ideas = {
 	}
 	
 	additional_loyalist_recruitment = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 		reduced_liberty_desire = 20
 	}
 	
@@ -953,12 +840,12 @@ influence_ideas = {
 		diplomatic_reputation = 2
 	}
 	postal_service = {
+		vassal_manpower_bonus = 0.25
 		vassal_forcelimit_bonus = 1
 		vassal_naval_forcelimit_bonus = 0.5
 	}
 	marcher_lords = {
-		years_to_integrate_personal_union = -10
-		chance_to_inherit = 0.33
+		years_to_integrate_personal_union = -15
 	}
 
 	ai_will_do = {
