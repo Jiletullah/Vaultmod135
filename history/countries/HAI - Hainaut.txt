@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = wallonian
+capital = 91	# Mons
+
+1444.1.1 = {
+	monarch = {
+		name = "Joseph"
+		dynasty = "Urbanus"
+		birth_date = 1401.4.4
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Anus"
+		dynasty = "Urbanus"
+		birth_date = 1441.4.4
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

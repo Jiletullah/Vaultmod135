@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = wallonian
+religion = catholic
+technology_group = western
+capital = 94	# Luxembourg
+fixed_capital = 94 # Cannot move capital away from this province & no power cost to move to it
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Egbert"
+		dynasty = "von Luxemburg"
+		birth_date = 1421.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

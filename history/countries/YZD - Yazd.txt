@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = persian
+religion = zoroastrian
+technology_group = muslim
+capital = 433 # Kerman
+
+1426.1.1 = {
+	monarch = {
+		name = "Advi"
+		dynasty = "Mazda"
+		adm = 4
+		dip = 6
+		mil = 3
+	}

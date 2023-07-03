@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = chinese_warlord
+government_rank = 3
+technology_group = chinese
+religion = confucianism
+add_harmonized_religion = mahayana
+primary_culture = jianghuai
+capital = 1821	# Nanjing
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "Emperor"
+		}
+	}
+	change_estate_land_share = {
+		estate = estate_burghers
+		share = 10
+	}
+	change_estate_land_share = {
+		estate = estate_church
+		share = 10
+	}
+	change_estate_land_share = {
+		estate = estate_nobles
+		share = -20
+	}
+}
+1435.1.31 = {
+	monarch = {
+		name = "Qizhen" #Zhengtong Emperor
+		dynasty = "Zhu"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
+	add_ruler_personality = naive_personality
+}
+
+1435.1.31 = {
+	heir = {
+		name = "Qiyu" #Jingtai Emperor
+		monarch_name = "Qiyu"
+		dynasty = "Zhu"
+		birth_date = 1428.9.21
+		death_date = 1457.3.14
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}

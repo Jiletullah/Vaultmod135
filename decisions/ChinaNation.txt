@@ -1,0 +1,76 @@
+country_decisions = {
+
+	china_nation = {
+		major = yes
+		potential = {
+			culture_group = east_asian
+			NOT = { has_country_flag = formed_china_flag }
+			}
+			
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 1821
+			owns_core_province = 1816
+			owns_core_province = 700
+			owns_core_province = 680
+			owns_core_province = 667
+			owns_core_province = 662
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+				value = 80
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+							owns_core_province = 1821
+			owns_core_province = 1816
+			owns_core_province = 700
+			owns_core_province = 680
+			owns_core_province = 667
+			owns_core_province = 662
+			region = north_china_region
+			region = south_china_region
+			region = xinan_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		effect = { 
+			change_tag = CHN
+			add_prestige = 25
+
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = CHN
+			}
+			south_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = CHN
+			}
+			xinan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = CHN
+			}
+			set_country_flag = formed_china_flag
+		}
+			ai_will_do = {
+			factor = 1
+}

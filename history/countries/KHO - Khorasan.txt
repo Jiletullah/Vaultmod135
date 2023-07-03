@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+primary_culture = khorasani
+add_accepted_culture = persian
+religion = shiite
+religious_school = zaidi_school
+technology_group = muslim
+capital = 446 # Herat
+
+1444.1.1 = { #At start this represents Astarabad, with alegience to Babur bin Baysunkur.
+	#capital = 2214 #Astarabad
+	monarch = {
+		name = "Babur bin Baysunkur"
+		dynasty = "Timurid"
+		adm = 2
+		dip = 4
+		mil = 2
+		culture = khorasani
+		religion = shiite
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
+}

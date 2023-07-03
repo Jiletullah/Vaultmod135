@@ -1,0 +1,18 @@
+government_rank = 1
+government = republic
+add_government_reform = peasants_republic #Achtundvierziger 
+technology_group = western
+religion = catholic
+primary_culture = lower_saxon
+capital = 4141 #Ditmarschen
+
+1440.1.1 = {
+	monarch = {
+		name = "Heinrich"
+		dynasty = "Mauser"
+		birth_date = 1401.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}

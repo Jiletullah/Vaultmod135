@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = flemish
+
+capital = 92
+
+1444.1.1 = {
+	monarch = {
+		name = "Theo"
+		dynasty = "van Lawick"
+		birth_date = 1416.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

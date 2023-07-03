@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+unit_type = western
+primary_culture = swedish
+religion = catholic
+add_accepted_culture = finnish
+capital = 1	#Stockholm
+
+national_focus = MIL
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -6
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 10
+}
+
+1444.11.01 = {
+monarch = {
+		name = "Gustav"
+		dynasty = "Vasa"
+		birth_date = 1428.09.11
+		adm = 3
+		dip = 3
+		mil = 3
+		}
+}

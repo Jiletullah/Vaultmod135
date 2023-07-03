@@ -1,0 +1,54 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = castillian
+add_accepted_culture = andalucian
+add_accepted_culture = leonese
+religion = catholic
+technology_group = western
+historical_rival = GRA
+historical_friend = POR
+capital = 219 # Toledo
+national_focus = MIL
+
+add_army_professionalism = 0.1
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 10
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+
+1418.6.2 = {
+	monarch = {
+		name = "Juan II"
+		dynasty = "de Trastámara"
+		birth_date = 1405.3.6
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ARA
+		name = "Maria"
+		dynasty = "de Trastámara"
+		birth_date = 1396.1.1
+		death_date = 1445.2.18
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1422.1.1 = { leader = {	name = "Alvaro de Luna"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }
+
+
+1425.1.5 = {
+	if = { 
+		limit = { has_dlc = "Domination" }
+		set_estate_privilege = estate_nobles_factionalist_nobility
+	}
+}

@@ -1,0 +1,105 @@
+country_decisions = {
+
+	austriahungary_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_auh_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			OR = {
+				ai = no
+				AND = {
+					HUN = { ai = yes }
+					tag = HAB
+				}
+				AND = {
+					HAB = { ai = yes }
+					tag = HUN
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+					NOT = { exists = AUH }
+				}
+			}
+			OR = {
+				primary_culture = austrian
+				primary_culture = hungarian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 134
+				province_id = 153
+				province_id = 133
+				province_id = 128
+				province_id = 1864
+				province_id = 154
+				province_id = 1953
+				province_id = 1954
+				province_id = 73
+				province_id = 266
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = AUH }
+			adm_tech = 15
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 134
+			owns_core_province = 153
+			owns_core_province = 133
+			owns_core_province = 128
+			owns_core_province = 1864
+			owns_core_province = 154
+			owns_core_province = 1953
+			owns_core_province = 1954
+			owns_core_province = 73
+			owns_core_province = 266
+		}
+		effect = {
+			change_tag = AUH
+			add_government_reform = austrian_dual_monarchy
+			add_prestige = 25
+			set_government_rank = 3
+			add_accepted_culture = hungarian
+			add_accepted_culture = austrian
+			add_accepted_culture = slovene
+			add_accepted_culture = slovak
+			add_accepted_culture = transylvanian
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_auh_flag
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

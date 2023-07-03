@@ -1,0 +1,332 @@
+per_iraq_branch = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = PER
+			tag = ARL
+		}
+	}
+	has_country_shield = yes
+	
+	per_conquer_tabriz = {
+	icon = mission_mosque
+	required_missions = { per_rise_of_the_safavids }
+	position = 2
+	trigger = {
+		tabriz_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		armenia_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+	effect = {
+		add_country_modifier = {
+				name = "per_increased_trade_control"
+				duration = 7300
+		}
+		add_dip_power = 100
+		luristan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+		}
+		shahrizor_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+		}
+		iraq_arabi_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+		}
+		khuzestan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+		}
+		basra_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+		}
+	}
+}
+	per_iraqi_trade = {
+	icon = mission_market_place_with_asian_traders
+	required_missions = { per_conquer_tabriz }
+	position = 3
+	trigger = {
+		luristan_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		shahrizor_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		iraq_arabi_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		khuzestan_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		basra_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+	effect = {
+		define_advisor = {
+			type = trader
+			name = "Hussayin Sad'am"
+			culture = iraqi
+			skill = 3
+			cost_multiplier = 0.25
+		}
+		410 = {
+			add_province_modifier = {
+			name = iraqi_trade
+			duration = 14600
+			}
+		}
+		408 = {
+			add_province_modifier = {
+			name = iraqi_trade
+			duration = 14600
+				}
+			}
+		}	
+	}
+}
+
+per_main_branch = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = PER
+			tag = ARL
+		}
+	}
+	has_country_shield = yes
+	
+	per_rise_of_the_safavids = {
+		icon = mission_persian_soldiers
+		required_missions = {  }
+		position = 1
+		trigger = {
+			army_size_percentage = 1 
+			manpower = 10
+			stability = 1
+			employed_advisor = { category = MIL }
+			treasury = 100
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "per_rise_of_safavid"
+				duration = 14600
+			}
+			add_mil_power = 50
+			shirvan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			armenia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			tabriz_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			azerbaijan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			tabarestan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	
+	per_into_persia = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { per_rise_of_the_safavids }
+		position = 2
+		add_adm_power = 100
+		trigger = {
+			azerbaijan_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			417 = { 
+				OR = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+					controlled_by = ROOT 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "per_persia_conquest"
+				duration = 7300
+			}
+			4338 = {
+				add_building = fort_15th
+			}
+			iraq_e_ajam_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			isfahan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	per_millions_must_persia = {
+		icon = mission_central_asian_city
+		required_missions = { per_into_persia }
+		position = 3
+		trigger = {
+			iraq_e_ajam_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			isfahan_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			set_capital = 428
+			428 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+			unlock_estate_privilege = {
+					estate_privilege = estate_burghers_mountain_expansion
+			}
+			persia_region = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	per_khorasan = {
+		icon = mission_persian_soldiers
+		required_missions = { per_millions_must_persia }
+		position = 4
+		trigger = {
+			num_of_owned_provinces_with = {
+				AND = {
+					is_core = ROOT
+					region = persia_region
+					}
+				value = 24
+			}
+		}
+		effect = {
+			khorasan_region = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+}
+
+per_religion_branch = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = PER
+			tag = ARL
+		}
+	}
+	has_country_shield = yes
+	
+	per_based_or_cringe = {
+		icon = mission_mosque
+		required_missions = { per_into_persia }
+		position = 3
+		trigger = {
+			421 = { 
+				controlled_by = ROOT 
+			}
+			433 = { 
+				controlled_by = ROOT 
+			}
+		}
+		effect = {
+			country_event = {
+				id = persian_conversion_event.1
+				days = 1
+			}
+		}
+	}
+}

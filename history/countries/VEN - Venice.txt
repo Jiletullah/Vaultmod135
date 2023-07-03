@@ -1,0 +1,32 @@
+government = republic
+add_government_reform = venice_merchants_reform
+mercantilism = 25
+primary_culture = venetian
+religion = catholic
+add_accepted_culture = greek
+add_accepted_culture = dalmatian
+technology_group = western
+capital = 112 # Venezia
+fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = KNI
+national_focus = DIP
+add_army_professionalism = 0.05
+
+
+1423.4.5 = {
+	monarch = {
+		name = "Francesco Foscari"
+		birth_date = 1373.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+		lear_scripted_personalities = yes
+		add_ruler_personality = entrepreneur_personality
+		add_ruler_personality = navigator_personality
+}
+
+1425.1.1 = { leader = {	name = "Francesco da Carmagnola" type = general	fire = 2	shock = 3	manuever = 4	siege = 2	death_date = 1452.5.5 } }
+
+1438.1.1 = { leader = {	name = "Erasmo Gattamelata"	type = admiral	fire = 2	shock = 2	manuever = 3	siege = 1	death_date = 1453.1.1 } }
+

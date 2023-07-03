@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 89 # picardy
+
+1444.1.1 = {
+	monarch = {
+		name = "Jean-Luc"
+		dynasty = "Picard"
+		birth_date = 1414.4.4
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

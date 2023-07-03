@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = swabian
+capital = 70
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Franzl Lang"
+		birth_date = 1411.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

@@ -1,0 +1,39 @@
+namespace = vaultpersia
+normal_or_historical_nations = yes
+
+country_event = {
+	id = persian_conversion_event.1
+	title = persian_conversion_event.1.t
+	desc = persian_conversion_event.1.d 
+	picture = DEBATE_REPUBLICAN_eventPicture.dds
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = PER
+			tag = ARL
+			}
+		}
+
+	option = {
+		name = "persia_shia_conviction"
+		change_religion = shiite
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+				name = "per_shia_conviction"
+				duration = 7300
+			}
+	}
+	
+	option = {
+		name = "persia_zoroastrian_conversion"
+		change_religion = zoroastrian
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+				name = "per_zoroastrian_conversion"
+				duration = 7300
+			}
+	}
+}

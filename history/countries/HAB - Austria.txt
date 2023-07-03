@@ -1,0 +1,94 @@
+government = monarchy
+add_government_reform = austrian_archduchy_reform
+government_rank = 1
+primary_culture = austrian
+religion = catholic
+technology_group = western
+capital = 134 # Wien
+historical_friend = HUN
+historical_rival = TUR
+historical_rival = FRA
+national_focus = ADM
+
+add_accepted_culture = slovene
+
+1439.10.27 = {
+	monarch = {
+		name = "Friedrich III"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+	
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+}
+
+1440.2.22 = {
+	heir = {
+		name = "Ladislaus Postumus"
+		monarch_name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
+		birth_date = 1440.2.22
+		death_date = 1457.11.24
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	set_country_flag = hab_ladislaus_postumus_heir
+}
+
+#1450.1.1 = { decision = court_of_wards_and_liveries }
+
+#Ladislaus is freed.
+
+1452.1.1 = {
+	monarch = {
+		name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
+		birth_date = 1440.2.22
+		death_date = 1457.11.24
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1457.11.24 = {
+	clr_country_flag = hab_ladislaus_postumus_heir
+	monarch = {
+		name = "Friedrich III"
+		dynasty = "von Habsburg"
+		birth_date = 1415.9.21
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Eleanor"
+		dynasty = "de Avis"
+		birth_date = 1434.9.18
+		death_date = 1467.9.3
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1459.3.22 = {
+	heir = {
+		name = "Maximilian"
+		monarch_name = "Maximilian I"
+		dynasty = "von Habsburg"
+		birth_date = 1459.3.22
+		death_date = 1519.1.12
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

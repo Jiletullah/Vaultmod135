@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = malay_plutocracy_reform
+primary_culture = sumatran
+religion = sunni
+technology_group = chinese
+capital = 620	# Siak
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Tsau-Lha" 
+		dynasty = "Krupuk"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+		clear_scripted_personalities = yes
+		add_ruler_personality = entrepreneur_personality
+	}
+}

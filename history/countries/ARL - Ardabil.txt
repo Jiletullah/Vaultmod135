@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+primary_culture = persian
+add_accepted_culture = azerbaijani
+add_accepted_culture = mazandarani
+religion = shiite
+technology_group = muslim
+capital = 424 #Ardabil
+government_rank = 1
+add_army_professionalism = 0.05
+religious_school = jafari_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Ismail"
+		monarch_name = "Ismail I"
+		dynasty = "Safavid"
+		birth_date = 1412.11.9
+		death_date = 1451.7.22
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+	add_piety = -1.0
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Thamasp"
+		monarch_name = "Thamasp I"
+		dynasty = "Safavid"
+		birth_date = 1441.2.22
+		death_date = 1481.7.22
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1444.1.1 = {
+	leader = {
+		name = "Safi Hussain"
+		type = general
+
+		fire = 2
+		shock = 4
+		manuever = 3
+		siege = 2
+		death_date = 1460.1.1
+	}
+}

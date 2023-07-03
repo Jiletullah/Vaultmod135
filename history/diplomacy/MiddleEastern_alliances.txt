@@ -1,0 +1,54 @@
+#Kurdish Principalities generally autonomous under Qara Qoyunlu
+vassal = {
+	first = QAR
+	second = BTL
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+#Avar Khanate under the Shamkals
+vassal = {
+	first = GAZ
+	second = AVR
+	start_date = 1435.1.1
+	end_date = 1770.1.1
+}
+
+#Ardalan ajam vassal
+vassal = {
+	first = QOM
+	second = ARD
+	start_date = 1444.1.1
+	end_date = 1446.1.1
+}
+
+
+# Cyprus mamluk vassal
+vassal = {
+	first = MAM
+	second = CYP
+	start_date = 1444.1.1
+	end_date = 1489.1.1
+}
+
+# Hejaz mamluk vassal
+vassal = {
+	first = MAM
+	second = HED
+	start_date = 1444.1.1
+	end_date = 1517.1.1
+}
+
+vassal = {
+	first = MAM
+	second = MDA
+	start_date = 1444.1.1
+	end_date = 1482.6.1
+}
+
+vassal = {
+	first = MAM
+	second = FAD
+	start_date = 1444.1.1
+	end_date = 1516.8.24
+}
