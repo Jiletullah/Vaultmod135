@@ -17,7 +17,23 @@ country_decisions = {
 					adm_tech = 6
 				}
 				AND = {
+					tag = SPA
+					adm_tech = 6
+				}
+				AND = {
+					tag = HOL
+					adm_tech = 6
+				}
+				AND = {
+					tag = NED
+					adm_tech = 6
+				}
+				AND = {
 					tag = ENG
+					adm_tech = 6
+				}
+				AND = {
+					tag = GBR
 					adm_tech = 6
 				}
 				AND = { 
@@ -25,7 +41,7 @@ country_decisions = {
 					adm_tech = 7
 				}
 				AND = {
-					adm_tech = 12
+					adm_tech = 10
 				}
 			}
 		}
