@@ -2,8 +2,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_land_shock = 1
-		nobles_loyalty_modifier = 0.1
+		general_cost = -0.1
 	}
 	
 	noble_knights = {
@@ -11,25 +10,24 @@ aristocracy_ideas = {
 		cavalry_cost = -0.1
 	}
 	military_traditions = {
-		mil_tech_cost_modifier  = -0.1
+		shock_damage = 0.10
 	}
 	local_nobility = {
-		shock_damage = 0.1
-		shock_damage_received = -0.05
+		mil_tech_cost_modifier  = -0.1
 	}
 	serfdom = {
-		land_morale = 0.1
+		army_tradition_decay = -0.01
+		army_tradition = 0.5
 	}
 	noble_officers = {
-		army_tradition_decay = -0.01
-		navy_tradition_decay = -0.01
+		global_manpower_modifier = 0.2
 	}
 	international_nobility = {
-		free_leader_pool = 4
-		general_cost = -0.05
+		fire_damage_received = -0.15
 	}
 	noble_resilliance = {
-		global_manpower_modifier = 0.20
+		leader_land_manuever = 1
+		nobles_loyalty_modifier = 0.10
 	}
 	
 
@@ -43,33 +41,29 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		army_tradition = 0.5
-		burghers_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
+		land_forcelimit_modifier = 0.15
 	}
 
 	tradition_of_payment = {
-		artillery_power = 0.1
+		shock_damage_received = -0.1
 	}
 	abolished_serfdom = {
-		land_morale = 0.10
+		infantry_power = 0.1
 	}
 	bill_of_rights = {
-		artillery_cost = -0.15
+		manpower_recovery_speed = 0.10
 	}
 	free_merchants = {
-		yearly_army_professionalism = 0.002
+		reinforce_speed = 0.20
 	}
 	free_subjects = {
-		backrow_artillery_damage = 0.1
-		artillery_barrage_cost = -0.2
+		global_regiment_recruit_speed = -0.33
 	}
 	free_cities = {
-		artillery_level_modifier = 2
-		artillery_levels_available_vs_fort = 1
+		reinforce_cost_modifier = -0.10
 	}
 	emancipation = {
-		manpower_recovery_speed = 0.2
+		fire_damage = 0.15
 	}
 
 	ai_will_do = {
@@ -77,123 +71,6 @@ plutocracy_ideas = {
 	}
 }
 
-horde_gov_ideas = {
-	category = MIL
-	
-	bonus = {
-		fire_damage_received = -0.1
-	}
-	
-	horse_lords = {
-		cav_to_inf_ratio = 0.5
-	}
-	beyond_the_sun = {
-		movement_speed = 0.1
-		leader_land_manuever = 1
-	}
-	mandate_of_the_khan = {
-		siege_ability = 0.1
-		warscore_from_battles_modifier = 0.15
-	}
-	there_shall_be_no_grass = {
-		land_attrition = -0.25
-		loot_amount = 0.33
-	}
-	horde_loyalty = {
-		cavalry_power = 0.15
-	}
-	watchers_of_the_silk_road = {	
-		global_supply_limit_modifier = 0.25
-	}
-	a_magnanimous_empire = {
-		cavalry_cost = -0.15
-	}
-	
-	ai_will_do = {
-		factor = 0
-		modifier = {
-		factor = 8
-		OR = {
-		government = steppe_horde
-		government = great_mongol_state_reform
-			}
-		}
-	}
-}
-
-theocracy_gov_ideas = {
-	category = MIL
-	
-	bonus = {
-		warscore_from_battles_modifier = 0.1
-	}
-		
-	servants_of_god = {
-		global_regiment_cost = -0.1
-		global_regiment_recruit_speed = -0.33
-		land_attrition = -0.2
-	}
-	by_the_grace_of_god = {
-		shock_damage_received = -0.1
-	}
-	friends_in_high_places = {
-		land_forcelimit_modifier = 0.2
-	}
-	flesh_is_weak = {
-		land_morale = 0.1
-	}
-	alpha_and_omega = {
-		leader_land_shock = 1
-	}
-	conviction_of_sin = {
-		fire_damage = 0.1
-	}
-	martyrs = {
-		manpower_in_true_faith_provinces = 0.15
-	}
-	ai_will_do = {
-		factor = 3.5
-	}
-}
-
-indigenous_ideas = {
-	category = MIL
-
-	bonus = {
-		global_institution_spread = 0.25
-	}
-
-	trigger = {
-		has_government_attribute = enables_natives_idea_group
-	}
-
-	indigenous_bountiful_land = {
-		tribal_development_growth = 0.015
-		development_cost = -0.05
-	}
-	indigenous_irregular_warfare = {
-		hostile_attrition = 1
-	}
-	indigenous_constitution = {
-		monthly_reform_progress_modifier = 0.25
-	}
-	indigenous_braves = {
-		land_morale = 0.10
-	}
-	indigenous_controlled_burns = {
-		global_manpower_modifier = 0.15
-	}
-	indigenous_trade_with_foreigners = {
-		idea_cost = -0.1
-	}
-	indigenous_treaties = {
-		province_warscore_cost = -0.2
-	}
-
-	ai_will_do = {
-		factor = 10
-	}
-}
 
 innovativeness_ideas = {
 	category = ADM
@@ -431,31 +308,32 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		possible_mil_policy = 1
+		regiment_manpower_usage = -0.1
+		army_tradition_from_battle = 0.50
 	}
 
 	bayonet_leaders = {
-		leader_land_shock = 1
+		land_attrition = -0.20
 	}
 	national_conscripts = {
-		siege_ability = 0.15
-		global_regiment_recruit_speed = -0.1
+		reinforce_speed = 0.20
 	}
 	superior_firepower = {
-		leader_land_fire = 1
+		morale_damage = 0.15
 	}
 	glorious_arms = {
-		army_tradition_from_battle = 0.5
-	}
-	engineer_corps = {
 		assault_fort_ability = 0.1
 		assault_fort_cost_modifier = -1
 	}
+	engineer_corps = {
+		artillery_levels_available_vs_fort = 1
+		leader_siege = 1
+	}
 	grand_army = {
-		morale_damage = 0.1
+		movement_speed = 0.15
 	}
 	napoleonic_warfare = {
-		discipline = 0.05
+		siege_ability = 0.25
 	}
 
 	ai_will_do = {
@@ -514,29 +392,26 @@ defensive_ideas = {
 	}
 
 	battlefield_commisions = {
-		leader_land_manuever = 1
+		defensiveness = 0.2
+		fort_maintenance_modifier = -0.2
 	}
 	military_drill = {
-		morale_damage_received = -0.1
+		hostile_attrition = 2
 	}
 	improved_manuever = {
-		shock_damage_received = -0.1
-		fire_damage_received = -0.1
+		morale_damage_received = -0.1
 	}
 	regimental_system = {
-		fort_maintenance_modifier = -0.2
-		rival_border_fort_maintenance = -0.2
+		recover_army_morale_speed = 0.33
 	}
 	defensive_mentality = {
-		defensiveness = 0.2
-		garrison_damage = 0.2
+		land_maintenance_modifier = -0.10
 	}
 	supply_trains = {
-		reinforce_speed = 0.15
-		recover_army_morale_speed = 0.25
+		land_morale = 0.10
 	}
 	improved_foraging = {
-		hostile_attrition = 2
+		max_attrition = 1
 	}
 
 	ai_will_do = {
@@ -817,16 +692,19 @@ quality_ideas = {
 	}
 
 	private_to_marshal = {
-		infantry_power = 0.1
+		army_tradition = 1
 	}
 	quality_education = {
-		army_tradition = 0.5
+		leader_land_shock = 1
+		leader_land_fire = 1
+		leader_land_manuever = 1
+		leader_siege = 1
 	}
 	finest_of_horses = {
 		yearly_army_professionalism = 0.005
 	}
 	regimental_organisation = {
-		reinforce_speed = 0.2
+		special_unit_forcelimit = 0.33
 	}
 	drill_officers = {
 		drill_gain_modifier = 0.5
@@ -835,7 +713,7 @@ quality_ideas = {
 		drill_decay_modifier = -0.5
 	}
 	massed_battery = {
-		artillery_power = 0.1
+		artillery_power = 0.15
 	}
 
 	ai_will_do = {
@@ -858,20 +736,21 @@ quantity_ideas = {
 	}
 	enforced_service = {
 		global_regiment_cost = -0.15
+		land_maintenance_modifier = -0.15
+
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.15
+		reserves_organisation = 0.33
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.66
 		reinforce_cost_modifier = -0.33
 	}
 	garrison_conscription = {
-		reserves_organisation = 0.33
-		garrison_size = 0.2
+		may_return_manpower_on_disband = yes
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.33
+		land_morale = 0.05
 	}
 
 	ai_will_do = {
@@ -1105,43 +984,6 @@ influence_ideas = {
 	}
 }
 
-naval_ideas = {
-	category = MIL
-
-	trigger = {
-		primitives = no
-	}
-
-	bonus = {
-		allowed_marine_fraction = 0.5
-	}
-
-	boarding_parties = {
-		allowed_marine_fraction = 0.5
-	}
-	improved_rams = {
-		global_sailors_modifier = 0.25
-	}
-	naval_cadets = {
-		regiment_disembark_speed = 0.2
-	}
-	naval_glory = {
-		transport_attrition = -0.5
-	}
-	press_gangs = {
-		sailors_recovery_speed = 0.2
-	}
-	oak_forests_for_ships = {
-		land_maintenance_modifier = -0.1
-	}
-	superior_seamanship = {
-		land_morale = 0.05
-	}
-
-	ai_will_do = {
-		factor = 0
-	}
-}
 
 court_ideas = {
 	category = DIP
