@@ -364,7 +364,7 @@ defensive_ideas = {
 		land_morale = 0.10
 	}
 	improved_foraging = {
-		max_attrition = 1
+		max_hostile_attrition = 1
 	}
 
 	ai_will_do = {
