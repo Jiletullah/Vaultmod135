@@ -252,7 +252,7 @@ vault_modern_siege_equipment = {
 	}
 	
 	allow = {
-		full_idea_group = quality_ideas
+		full_idea_group = offensive_ideas
 		full_idea_group = innovativeness_ideas
 	}
 

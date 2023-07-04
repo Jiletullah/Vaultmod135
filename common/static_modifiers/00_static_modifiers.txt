@@ -97,7 +97,7 @@ difficulty_very_hard_ai = {
 ##########################################################################
 
 city = {
-	local_tax_modifier = 0.25
+	local_tax_modifier = 0.20
 	allowed_num_of_buildings = 2
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
@@ -330,7 +330,7 @@ native_aggressiveness = {
 }
 
 core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.70				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 }
@@ -459,8 +459,8 @@ devastation = {
 }
 
 prosperity = {
-	local_tax_modifier = 0.1
-	trade_goods_size_modifier = 0.1
+	local_tax_modifier = 0.05
+	trade_goods_size_modifier = 0.05
 	local_autonomy = -0.05
 }
 
@@ -856,7 +856,7 @@ navy_tradition = {
 positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
 	global_manpower_modifier = 0.20
-	global_tax_modifier = 0.20
+	global_tax_modifier = 0.15
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
@@ -1004,7 +1004,7 @@ devotion = {
 	yearly_doom_reduction = 0.5
 	yearly_karma_decay = 0.1
 	prestige = 2
-	global_tax_modifier = 0.50
+	global_tax_modifier = 0.40
 	church_loyalty_modifier = 0.1
 	brahmins_hindu_loyalty_modifier = 0.1
 	reform_progress_growth = 0.5
@@ -1449,13 +1449,12 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = -6
-	land_forcelimit	= -3
+	global_tax_income = -3
 	naval_forcelimit = -6
 }
 
 vassal_nation = {
-	development_cost = 0.5
+	development_cost = -0.5
 }
 
 primitive_nation = {
