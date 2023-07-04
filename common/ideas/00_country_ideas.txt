@@ -130,7 +130,7 @@ GER_ideas = {
 ENG_ideas = {
 	start = {
 		infantry_power = 0.1
-		land_morale = 0.1
+		heavy_ship_power = 0.1
 	}
 
 	bonus = {
@@ -170,11 +170,11 @@ ENG_ideas = {
 GBR_ideas = {
 	start = {
 		infantry_power = 0.1
-		land_morale = 0.1
+		heavy_ship_power = 0.15
 	}
 
 	bonus = {
-		global_sailors_modifier = 0.2
+		global_sailors_modifier = 0.15
 	}
 	
 	trigger = {
@@ -190,9 +190,10 @@ GBR_ideas = {
 		global_colonial_growth = 20
 	}
 	british_merchant_navy = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.15
 	}
 	gbr_the_royal_society = {
+		army_tradition = 0.5
 		technology_cost = -0.05
 	}
 	reform_of_comission_buying = {
@@ -203,7 +204,7 @@ GBR_ideas = {
 	}
 	britanna_rules_the_waves = {
 		navy_tradition = 0.5
-		sailor_maintenance_modifer = -0.1
+		naval_forcelimit_modifier = 0.25
 	}
 }
 
@@ -844,7 +845,7 @@ NED_ideas = {
 
 FRA_ideas = {
 	start = {
-		diplomatic_reputation = 1
+		cavalry_power = 0.1
 		global_manpower_modifier = 0.2
 	}
 	
@@ -874,7 +875,8 @@ FRA_ideas = {
 		reform_progress_growth = 0.15
 	}
 	native_trading_principles = {
-		colonists = 1
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
 	}
 	divine_right_to_rule = {
 		global_unrest = -2
@@ -1561,7 +1563,7 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		range = 0.20
+		colony_cost_modifier = -0.33
 		infantry_power = 0.1
 	}
 	

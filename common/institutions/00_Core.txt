@@ -544,10 +544,10 @@ new_world_i = {
 			AND = {
 				is_year = 1500
 				continent = europe
-				OR = {
-					owner = { has_idea = quest_for_the_new_world }
-					owner = { colony = 1 }
-				}
+				#OR = {
+				#	owner = { has_idea = quest_for_the_new_world }
+				#	owner = { colony = 1 }
+				#}
 			}
 			AND = {
 				is_year = 1550
@@ -619,8 +619,6 @@ new_world_i = {
 		is_institution_enabled = renaissance
 		OR = {
 			continent = europe
-			continent = asia
-			continent = africa
 		}
 		has_port = yes
 		is_island = no
@@ -632,7 +630,7 @@ new_world_i = {
 		}
 		is_in_capital_area = yes
 		owner = { 
-			has_any_exploration_idea = yes
+			#has_any_exploration_idea = yes
 			#at least one province colonised or colonising, or have a subject colony
 			OR = {
 				any_owned_province = {
