@@ -564,7 +564,7 @@ vault_special_forces_act = {
 
 
 
-vault_broaden_cirriculum_for_cadet_corps = {
+vault_modern_infantry_tactics = {
 	monarch_power = MIL
 
 
@@ -578,7 +578,8 @@ vault_broaden_cirriculum_for_cadet_corps = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	military_tactics = 0.015
+	infantry_power = 0.05
+	military_tactics = 0.15
 	
 	effect = {}
 	removed_effect = {}
