@@ -126,10 +126,10 @@ coastal = {
 }
 
 seat_in_parliament = {
-	local_manpower_modifier = 0.1
-	local_sailors_modifier = 0.1
-	local_tax_modifier = 0.1
-	local_production_efficiency = 0.1
+	local_manpower_modifier = 0.05
+	local_sailors_modifier = 0.05
+	local_tax_modifier = 0.05
+	local_production_efficiency = 0.05
 }
 
 non_coastal = {
@@ -155,7 +155,7 @@ arctic = {
 	local_hostile_attrition = 1
 
 	allowed_num_of_buildings = -1
-	local_development_cost = 0.2
+	local_development_cost = 0.1
 
 	picture = "climate_arctic"
 }
@@ -164,8 +164,6 @@ arid = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.2
 	local_hostile_attrition = 1
-
-	local_development_cost = 0.1
 
 	picture = "climate_arid"
 }
@@ -330,7 +328,7 @@ native_aggressiveness = {
 }
 
 core = {
-	local_tax_modifier = 0.70				#90% more in a core
+	local_tax_modifier = 0.60				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 }
@@ -340,7 +338,7 @@ non_core = {
 }
 
 colonial_core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.60				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
@@ -349,7 +347,7 @@ colonial_core = {
 }
 
 territory_core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.60				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
@@ -587,14 +585,14 @@ base_values = {
 	republican_tradition = 1
 	monthly_fervor_increase = 1
 	vassal_income = 0.10
-	horde_unity = -2
+	horde_unity = -0.5
 	devotion = -0.5
 	meritocracy = -2
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
-	cav_to_inf_ratio = 0.5
+	cav_to_inf_ratio = 0.75
 	merc_maintenance_modifier = 0.1
 	monthly_heir_claim_increase = 0.208
 	tolerance_of_heretics_capacity = 3
@@ -625,7 +623,6 @@ stability = {
 
 positive_stability = {
 	global_unrest = -2					#-1% revolt risk each step
-	global_tax_modifier = 0.05
 	global_missionary_strength = 0.005
 	temples_influence = 0.02
 	mr_aristocrats_influence = 0.03
@@ -767,7 +764,7 @@ unconditional_surrender = {
 }
 
 call_for_peace = {
-	war_exhaustion = 0.005
+	war_exhaustion = 0
 }
 
 war_exhaustion = {
@@ -969,7 +966,7 @@ negative_karma = {
 
 # Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
 country_development = {
-	horde_unity = -3
+	horde_unity = -0.1
 }
 
 # Multiplied by current Legitimacy - 50
@@ -2092,7 +2089,7 @@ under_governing_capacity_modifier = {
 
 
 lost_hegemony = {
-	all_power_cost	= 0.10
+	prestige = -5
 }
 
 at_peace_revolutionary = { # Applied if at peace while reactionaries are bordering you
@@ -2106,9 +2103,8 @@ expanded_infrastructure = {
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
 	garrison_growth = 0.05
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 	local_production_efficiency = 0.05
-	local_tax_modifier = 0.1
 	local_manpower_modifier = 0.05
 	local_sailors_modifier = 0.05
 	local_ship_repair = 0.05
@@ -2117,8 +2113,8 @@ expanded_infrastructure = {
 	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
-	local_governing_cost = 0.1
+	local_governing_cost_increase = 10
+	local_governing_cost = 0.05
 	local_great_project_upgrade_cost = -0.05
 }
 
