@@ -1,10 +1,11 @@
-# 1879 - Alençon
+# 1879 - Alenï¿½on
 
-owner = NRM
-controller = NRM
+owner = ENG
+controller = ENG
+add_core = ENG
 add_core = NRM
 add_core = ALE
-capital = "Alençon"
+capital = "Alenï¿½on"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic

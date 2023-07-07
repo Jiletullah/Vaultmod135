@@ -125,3 +125,74 @@ country_event = { #United ireland
 		}
 	}
 }
+
+
+country_event = { #Avoiding the war or losing before 1452
+
+	id = vault_flavor_eng.1
+	title = "vault_flavor_eng_HYW1"
+	desc = "vault_flavor_eng_HYW1DESC"
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+
+		tag = ENG
+		
+		AND = {
+			is_year = 1444
+			NOT = {owns = 177}
+			NOT = {has_country_flag = eng_dishonorable}
+			NOT = {has_country_flag = eng_honorable}
+			NOT = {war_with = FRA}
+		}
+		
+	}
+	
+	option = {		
+		name = "vault_flavor_eng_HYW1BTN"
+		ai_chance = { factor = 100 }
+		set_country_flag = eng_dishonorable
+		set_estate_privilege = estate_nobles_english_villeinage
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+}
+
+country_event = { #Fighting the epic 1v1 all the way
+
+	id = vault_flavor_eng.2
+	title = "vault_flavor_eng_HYW2"
+	desc = "vault_flavor_eng_HYW2DESC"
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+
+		tag = ENG
+
+		AND = {
+			is_year = 1452
+			NOT = {has_country_flag = eng_dishonorable}
+			NOT = {has_country_flag = eng_honorable}
+		}
+	}
+
+	option = {		
+		name = "vault_flavor_eng_HYW2BTN"
+		ai_chance = { factor = 100 }
+		set_country_flag = eng_honorable
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+}

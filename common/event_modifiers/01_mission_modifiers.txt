@@ -1816,6 +1816,12 @@ gbr_isolation_policy = {
 	build_cost = -0.05
 }
 
+eng_recovery_from_hyw = {
+	global_unrest = -2
+	development_cost = -0.10
+	build_cost = -0.10
+}
+
 gbr_angevin_invasion = {
 	manpower_recovery_speed = 0.2
 	mercenary_manpower = 0.2

@@ -4,10 +4,10 @@ latent_trade_goods = {
 	coal
 }
 
-owner = ENG
-controller = ENG
-add_core = ENG
+owner = WLS
+controller = WLS
 add_core = WLS
+add_core = ENG
 culture = welsh
 religion = catholic
 hre = no

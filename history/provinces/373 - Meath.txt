@@ -3,6 +3,7 @@
 owner = MTH
 controller = MTH
 add_core = MTH
+add_core = ENG
 culture = irish
 religion = catholic
 hre = no

@@ -1,7 +1,8 @@
 # 4385 Cotentin Peninsula - Principal cities: Cherbourg, Avranches
 
-owner = NRM
-controller = NRM
+owner = ENG
+controller = ENG
+add_core = ENG
 add_core = NRM
 capital = "Cherbourg"
 is_city = yes

@@ -4,9 +4,10 @@ mercantilism = 25
 technology_group = western
 primary_culture = english
 add_accepted_culture = welsh
+add_accepted_culture = norman
 religion = catholic
 capital = 236 # London
-national_focus = DIP
+national_focus = MIL
 
 change_estate_land_share = {
 	estate = estate_church
@@ -30,9 +31,9 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		name = "Henry VI"
 		dynasty = "Lancaster"
 		birth_date = 1421.12.6
-		adm = 1
-		dip = 0
-		mil = 1
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
@@ -45,11 +46,10 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 	leader = {
 		name = "John Talbot"
 		type = general
-		fire = 2
+		fire = 3
 		shock = 4
-		manuever = 3
-		siege = 0
-		death_date = 1453.7.17
+		manuever = 4
+		siege = 2
+		personality = master_of_arms_personality
 	}
-	set_estate_privilege = estate_nobles_english_villeinage
 }

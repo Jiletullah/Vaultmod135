@@ -1,9 +1,9 @@
 #4366 - Montgomery + Radnor
 
-owner = ENG
-controller = ENG
-add_core = ENG
-add_core = WLS 
+owner = WLS
+controller = WLS
+add_core = WLS
+add_core = ENG 
 culture = welsh
 religion = catholic
 hre = no
@@ -18,3 +18,4 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+center_of_trade = 1
