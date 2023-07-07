@@ -245,9 +245,7 @@ penal_colonies_reform = {
 			}
 		}
 	}
-	trigger = {
-		has_idea_group = exploration_ideas
-	}
+	trigger = {}
 	modifiers = {
 		expel_minorities_cost = -1
 		colonist_placement_chance = 0.05
@@ -3628,10 +3626,6 @@ new_world_exploitation_reform = {
 		}
 	}
 	trigger = {
-		OR = {
-			full_idea_group = expansion_ideas
-			full_idea_group = exploration_ideas
-		}
 		if = {
 			limit = {
 				is_revolutionary = yes

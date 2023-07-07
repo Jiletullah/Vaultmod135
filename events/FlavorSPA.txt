@@ -157,7 +157,6 @@ country_event = {
 			limit = {
 				NOT = { has_country_flag = turned_down_columbus }
 				religion = catholic
-				has_idea = quest_for_the_new_world
 			}
 			country_event = { id = flavor_spa.1 }
 		}

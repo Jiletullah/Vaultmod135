@@ -242,124 +242,6 @@ the_importation_act = {
 
 
 
-beneficial_neglect = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = exploration_ideas
-		has_idea_group = innovativeness_ideas
-	}
-	
-	allow = {
-		full_idea_group = exploration_ideas
-		full_idea_group = innovativeness_ideas
-	}
-
-	colonist_placement_chance = 0.05
-	global_trade_power = 0.1
-
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonies = 1 }
-		}
-		
-		modifier = {
-			factor = 0
-			NOT = { trade_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			trade_income_percentage = 0.5
-		}
-	}
-}
-
-restrictions_for_colonies = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = exploration_ideas
-		has_idea_group = religious_ideas
-	}
-	
-	allow = {
-		full_idea_group = exploration_ideas
-		full_idea_group = religious_ideas
-	}
-
-
-
-	global_missionary_strength = 0.02
-	liberty_desire_from_subject_development = -0.2
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { colony = 1 }
-		}
-		modifier = {
-			factor = 1.25
-			colony = 2
-		}
-		modifier = {
-			factor = 1.25
-			colony = 3
-		}			
-		modifier = {
-			factor = 1.25
-			colony = 4
-		}
-		modifier = {
-			factor = 1.25
-			colony = 5
-		}
-		modifier = {
-			factor = 0
-			religious_unity = 1
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { religious_unity = 0.6 }
-		}			
-		modifier = {
-			factor = 1.25
-			NOT = { religious_unity = 0.4 }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { religious_unity = 0.2 }
-		}			
-	}
-}
-
 
 new_naval_tactis = {
 	monarch_power = DIP
@@ -658,36 +540,6 @@ chaplains_of_the_fleet = {
 
 
 
-native_assimilation_act = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = humanist_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = humanist_ideas
-		full_idea_group = exploration_ideas
-	}	
-	
-	global_colonial_growth = 20
-	native_assimilation = 0.5
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { num_of_colonies = 1 }
-		}
-	}
-}
 
 the_foreign_aid_act = {
 	monarch_power = DIP
@@ -735,36 +587,6 @@ cultural_unity = {
 }
 
 
-skilled_cartographers = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = naval_ideas
-		has_idea_group = exploration_ideas
-	}
-	
-	allow = {
-		full_idea_group = naval_ideas
-		full_idea_group = exploration_ideas
-	}	
-	
-	global_ship_recruit_speed = -0.1
-	sailors_recovery_speed = 0.15
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 0.6
-			NOT = { num_of_colonies = 1 }
-		}
-	}
-}
 
 
 the_integrated_administration_act = {
@@ -941,47 +763,6 @@ vault_merchant_redirection_act = {
 	}
 }
 
-the_stamp_act = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = economic_ideas
-		has_idea_group = exploration_ideas
-	}
-	allow = {
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-	}
-	
-	global_trade_power = 0.1
-	global_tariffs = 0.15
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { colony = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			colony = 2
-		}
-		modifier = {
-			factor = 1.5
-			colony = 3
-		}			
-		modifier = {
-			factor = 1.5
-			colony = 4
-		}
-		modifier = {
-			factor = 1.5
-			colony = 5
-		}		
-	}
-}
 
 
 
@@ -1423,28 +1204,7 @@ merchants_hire_act = {
 	}
 }
 
-transportation_act = { 
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = mercenary_ideas
-		has_idea_group = exploration_ideas   
-	}
-	
-	allow = {
-		full_idea_group = mercenary_ideas
-		full_idea_group = exploration_ideas 
-	}
-	
-	transport_cost = -0.3
-	transport_attrition = -0.5
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0			
-	}
-}
+
 
 maritime_expertise_act = { 
 	monarch_power = DIP

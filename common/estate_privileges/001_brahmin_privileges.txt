@@ -270,7 +270,7 @@ estate_brahmins_brahmin_leadership = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.15
+		adm_advisor_cost = -0.10
 	}
 	ai_will_do = {
 		factor = 9

@@ -3258,12 +3258,7 @@ dom_cas_missions_4_c = {
 		required_missions = { gc_cas_spa_plus_ultra2 }
 		position = 8
 		
-		trigger = { 
-			OR = { 
-				full_idea_group = exploration_ideas
-				full_idea_group = expansion_ideas
-			}
-		}
+		trigger = {}
 	
 		effect = {
 			if = {
@@ -3383,7 +3378,7 @@ dom_cas_missions_4_c = {
 				fire = 5
 				manuever = 6
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3

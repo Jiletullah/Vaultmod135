@@ -84,7 +84,7 @@ christian = {
 					}	
 					concilatory = {
 						relation_with_heretics = 5
-						global_missionary_strenght = 0.01
+						global_missionary_strength = 0.01
 					}
 				}
 				second_concession = {
