@@ -985,3 +985,34 @@ colonial_ai_buff = {
 	colonists = 3
 	global_tax_income = 36
 }
+
+
+colonial_player_buff = {
+	trigger = {
+		is_colonial_nation = yes
+		ai = no
+	}
+
+	colonist = 1
+}
+
+
+united_netherlands = {
+
+	trigger = {
+		AND = {
+			tag = NED
+			NOT = {num_of_states = 7}
+			owns_core_province = 97
+			owns_core_province = 96
+		}
+	}
+
+	land_forcelimit = 30
+	land_forcelimit_modifier = 0.33
+	global_manpower = 30
+	global_manpower_modifier = 0.33
+	naval_forcelimit = 30
+	naval_forcelimit_modifier = 0.33
+
+}

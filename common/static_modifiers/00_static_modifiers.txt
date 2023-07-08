@@ -2003,7 +2003,7 @@ caravel_ship = {
 }
 
 voc_indiamen_ship = {
-	number_of_cannons_modifier = 0.33
+	number_of_cannons_modifier = 0.5
 	ship_trade_power_modifier = 0.2
 	can_transport_units = yes
 }
