@@ -993,7 +993,7 @@ colonial_player_buff = {
 		ai = no
 	}
 
-	colonist = 1
+	colonists = 1
 }
 
 
@@ -1002,7 +1002,7 @@ united_netherlands = {
 	trigger = {
 		AND = {
 			tag = NED
-			NOT = {num_of_states = 7}
+			NOT = {num_of_states = 8}
 			owns_core_province = 97
 			owns_core_province = 96
 		}
