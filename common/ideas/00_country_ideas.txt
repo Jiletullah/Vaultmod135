@@ -798,50 +798,6 @@ CAS_ideas = {
 	}
 }
 
-NED_ideas = {
-	start = {
-		global_sailors_modifier = 0.33
-		trade_efficiency = 0.15
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-
-	trigger = {
-			tag = NED
-	}
-	free = yes		
-	
-	embrace_humanism = {
-		tolerance_heretic = 3
-		tolerance_heathen = 3
-		global_unrest = -2
-	}
-	dutch_trading_spirit = {
-		colonists = 1
-		merchants = 1
-	}
-	army_sappers = {
-		land_morale = 0.1
-	}
-	polders = {
-		development_cost = -0.1
-		defensiveness = 0.2
-	}
-	instructie_voor_de_admiraliteiten = {
-		leader_naval_fire = 1
-		leader_naval_shock = 1
-		allowed_marine_fraction = 0.3
-	}
-	amsterdam_wisselbank = {
-		drill_gain_modifier = 0.25
-		drill_decay_modifier = -0.5
-	}
-	platoon_fire = {
-		fire_damage = 0.2
-	}
-}
 
 FRA_ideas = {
 	start = {
@@ -17937,22 +17893,27 @@ ARB_ideas = {
 
 HOL_ideas = {
 	start = {
-		global_sailors_modifier = 0.2
-		trade_efficiency = 0.1
+		range = 0.33
+		trade_efficiency = 0.15
 	}
 	
 	bonus = {
-		discipline = 0.05
+		blockade_force_required = 1
+		own_territory_dice_roll_bonus = 1
 	}
 
 	trigger = {
-			tag = HOL
+			OR = {
+				tag = HOL
+				tag = NED
+			}
 	}
 	free = yes		
 	
 	HOL_embrace_humanism = {
-		tolerance_heretic = 2
-		tolerance_heathen = 2
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+		idea_cost = -0.05
 	}
 	HOL_dutch_trading_spirit = {
 		merchants = 1
@@ -17961,18 +17922,20 @@ HOL_ideas = {
 		land_morale = 0.1
 	}
 	HOL_polders = {
-		development_cost = -0.05
-		defensiveness = 0.1
+		development_cost = -0.1
+		defensiveness = 0.33
 	}
 	HOL_instructie_voor_de_admiraliteiten = {
+		global_sailors_modifier = 0.25
 		allowed_marine_fraction = 0.25
 	}
 	HOL_amsterdam_wisselbank = {
-		drill_gain_modifier = 0.25
-		drill_decay_modifier = -0.5
+		interest = -0.75
+		
 	}
 	HOL_platoon_fire = {
-		fire_damage = 0.15
+		fire_damage = 0.20
+		drill_decay_modifier = -0.5
 	}
 }
 
