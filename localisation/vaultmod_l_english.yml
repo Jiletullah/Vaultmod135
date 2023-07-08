@@ -244,3 +244,7 @@
  vault_flavor_eng_HYW2: "A New Era"
  vault_flavor_eng_HYW2DESC: "We have lost it all but the honor. Gallantry and dedication of our king, armies and nobles shows England may have fallen but not lost yet. With the reports from our seamen, a new era is on the horizon for England."
  vault_flavor_eng_HYW2BTN: "God save the king!"
+ vault_flavor_fra_HYW1: "Glorious Reconqust"
+ vault_flavor_fra_HYW1DESC: "The reconquest of our lands was rapid. England truly was a paper lion like they said after all. However, important lessons were learned on artillery and its effect against cities. We should pass that knowledge for the generations to come."
+ vault_flavor_fra_HYW1BTN: "We have honored the Joan!"
+ vault_fra_lessons_of_hyw: "Lessons of the Hundred Years War"

@@ -53,15 +53,15 @@ war_of_the_roses = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 4
 			NOT = { dynasty = York }
 		}
 		modifier = {
-			factor = 0.2
+			factor = 4
 			NOT = { dynasty = Lancaster }
 		}
 		modifier = {
-			factor = 0.2
+			factor = 4
 			NOT = { stability = 1 }
 		}
 		modifier = {
