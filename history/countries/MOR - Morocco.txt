@@ -33,6 +33,7 @@ change_estate_land_share = {
 	}
 	set_estate_privilege = estate_nobles_strong_duchies
 	add_ruler_personality = calm_personality
+	add_ruler_personality = scholar_personality
 }
 
-1426.1.1 = { leader = {	name = "Yusuf ben Tashfin"	type = general	fire = 2	shock = 3	manuever = 5	siege = 0	death_date = 1468.6.2 } }
+1444.1.1 = { leader = {	name = "Yusuf ben Tashfin"	type = general	fire = 2	shock = 4	manuever = 5	siege = 0 } }

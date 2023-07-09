@@ -696,7 +696,7 @@ NCountry = {
 	PIETY_INCREASE_AT_GOOD_WAR = 0.0,
 	PIETY_DECREASE_AT_BAD_WAR = -0.0,
 	ADVISOR_COST_INCREASE_PER_YEAR = 0.006,			-- yearly increase in price in percent,
-	SCRIPTED_ADVISOR_DISCOUNT = 0.35,				-- Multiplier on cost for advisors scripted with discount=yes
+	SCRIPTED_ADVISOR_DISCOUNT = 0.75,				-- Multiplier on cost for advisors scripted with discount=yes
 	MINIMUM_ADVISOR_DURATION = 10, 					-- _CDEF_MINIMUM_ADVISOR_DURATION_
 	MINIMUM_ADVISOR_DURATION_CHANCE_VALUE = 15,		-- Higher value here gives lower daily death chance after MINIMUM_ADVISOR_DURATION
 	ADVISOR_CUT_OFF_AGE = 30, 						-- _CDEF_ADVISOR_CUT_OFF_AGE = 10,
@@ -1151,7 +1151,7 @@ NEconomy = {
 	LAND_TECH_MAINTENANCE_IMPACT = 0.04, 			-- % each tech increases it.
 	NAVAL_TECH_MAINTENANCE_IMPACT = 0.04, 			-- % each tech increases it.
 	LAND_TECH_MERC_MAINTENANCE_IMPACT = 0.08, 			-- % each tech increases it.
-	ADVISOR_COST = 1.0,								-- Advisor cost modifier
+	ADVISOR_COST = 1.5,								-- Advisor cost modifier
 	GOLD_INFLATION_THRESHOLD = 0.0,					-- _EDEF_GOLD_INFLATION_THRESHOLD_
 	GOLD_INFLATION = 0.5,							-- _EDEF_GOLD_INFLATION_
 	TREASURE_FLEET_INFLATION = 0.5,
