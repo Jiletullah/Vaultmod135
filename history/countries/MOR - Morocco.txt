@@ -6,6 +6,8 @@ technology_group = muslim
 capital = 343 # Fez
 add_accepted_culture = berber
 religious_school = maliki_school
+historical_rival = GRA
+national_focus = MIL
 
 change_estate_land_share = {
 	estate = estate_nobles
@@ -24,11 +26,13 @@ change_estate_land_share = {
 	monarch = {
 		name = "Abdalhaqq II"
 		dynasty = "Marinid"
+		birth_date = 1420.1.1
 		adm = 3
-		dip = 2
-		mil = 4
+		dip = 3
+		mil = 5
 	}
 	set_estate_privilege = estate_nobles_strong_duchies
+	add_ruler_personality = calm_personality
 }
 
 1426.1.1 = { leader = {	name = "Yusuf ben Tashfin"	type = general	fire = 2	shock = 3	manuever = 5	siege = 0	death_date = 1468.6.2 } }

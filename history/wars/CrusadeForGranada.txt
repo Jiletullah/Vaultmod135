@@ -8,18 +8,16 @@ war_goal = {
 	add_attacker = CAS
 	add_attacker = ARA
 	add_attacker = POR
-	add_attacker = MOR
+	add_defender = MOR
 	add_defender = GRA
 }
 
-1443.1.1 = {
-	rem_attacker = CAS
-	rem_attacker = MOR
-}
 
 #Peace and end of war
 1444.1.1 = {
 	rem_attacker = ARA
 	rem_attacker = POR
+	rem_attacker = CAS
 	rem_defender = GRA
+	rem_defender = MOR
 }

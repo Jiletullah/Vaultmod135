@@ -217,6 +217,10 @@ country_event = { # FRA rapid re-conquest
 		}
 	}
 
+		mean_time_to_happen = {
+		months = 1
+	}
+
 	option = {
 		name = "vault_flavor_fra_HYW1BTN"
 		ai_chance = {factor = 100}
@@ -233,6 +237,66 @@ country_event = { # FRA rapid re-conquest
 			name = vault_fra_lessons_of_hyw
 			duration = -1
 		}
+	}
+
+}
+
+
+country_event = {
+	id = vault_flavor_spa.4
+	title = "vault_flavor_spa_ARA"
+	desc = "vault_flavor_spa_ARADESC"
+	picture = MONARCH_CHILD_WITH_REGENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+
+		tag = CAS
+
+		AND = {
+			is_year = 1456
+			NOT = {war_with = ARA}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+
+		create_union = ARA
+		add_historical_friend = ARA
+
+		ARA = {
+			211 = {
+				cede_province = CAS
+			}
+
+			4557 = {
+				cede_province = CAS
+			}
+
+			214 = {
+				cede_province = CAS
+			}
+
+			2990 = {
+				cede_province = CAS
+			}
+
+			remove_core = 211
+			remove_core = 4557
+			remove_core = 214
+			remove_core = 2990
+			add_historical_friend = CAS
+		}
+
+			add_core = 211
+			add_core = 4557
+			add_core = 214
+			add_core = 2990
 	}
 
 }

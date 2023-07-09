@@ -24,16 +24,16 @@ change_estate_land_share = {
 1418.6.2 = {
 	monarch = {
 		name = "Juan II"
-		dynasty = "de Trastámara"
-		birth_date = 1405.3.6
-		adm = 2
-		dip = 2
-		mil = 2
+		dynasty = "de Trastï¿½mara"
+		birth_date = 1414.3.6
+		adm = 4
+		dip = 3
+		mil = 3
 	}
 	queen = {
 		country_of_origin = ARA
 		name = "Maria"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1396.1.1
 		death_date = 1445.2.18
 		female = yes
@@ -41,6 +41,9 @@ change_estate_land_share = {
 		dip = 2
 		mil = 2
 	}
+
+	add_ruler_personality = calm_personality
+	add_ruler_personality = lawgiver_personality
 }
 
 1422.1.1 = { leader = {	name = "Alvaro de Luna"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }

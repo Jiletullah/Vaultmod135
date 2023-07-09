@@ -979,7 +979,6 @@ vault_unified_command = {
 		full_idea_group = influence_ideas
 	}
 
-	vassal_forcelimit_bonus = 1
 	vassal_manpower_bonus = 0.25
 	land_morale = 0.05
 	

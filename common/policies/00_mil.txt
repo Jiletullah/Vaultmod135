@@ -117,8 +117,8 @@ vault_tercio_tactics = {
 		full_idea_group = religious_ideas
 	}
 
-	shock_damage_received = -0.10
-	infantry_power = 0.10
+	shock_damage_received = -0.15
+	infantry_power = 0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -145,8 +145,8 @@ vault_maurican_tactics = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	fire_damage = 0.10
-	infantry_power = 0.10
+	fire_damage = 0.15
+	infantry_power = 0.05
 	
 	effect = {}
 	removed_effect = {}
@@ -461,7 +461,8 @@ vault_quality_firearms = {
 		full_idea_group = economic_ideas
 	}
 
-	fire_damage = 0.15
+	fire_damage = 0.10
+	shock_damage = 0.10
 	
 	effect = {}
 	removed_effect = {}

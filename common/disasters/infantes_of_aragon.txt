@@ -40,6 +40,7 @@ infantes_of_aragon = {
 	
 
 	modifier = {
+		stability_cost_modifier = -0.15
 		global_unrest = 5
 		nobles_loyalty_modifier = -0.1
 		nobles_influence_modifier = 0.1

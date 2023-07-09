@@ -13898,3 +13898,7 @@ vault_fra_lessons_of_hyw = {
 	artillery_power = 0.10
 	leader_siege = 1
 }
+
+vault_porto_wine_distilleries = {
+	trade_goods_size = 1.5
+}
