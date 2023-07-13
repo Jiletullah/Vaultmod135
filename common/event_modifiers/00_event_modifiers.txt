@@ -9863,9 +9863,7 @@ the_tatar_yoke = {
 }
 
 vasily_ii_in_exile = {
-	country_admin_power = -1
-	country_diplomatic_power = -1
-	country_military_power = -1
+	prestige = -0.5
 }
 
 #Professionalism Events
@@ -11741,7 +11739,8 @@ estate_cossacks_freedom_of_the_steppes_mod = {
 	local_development_cost = -0.05
 }
 estate_nomadic_tribes_freedom_of_the_steppes_mod = {
-	local_development_cost = -0.05
+	local_development_cost = -0.15
+	trade_goods_size = 0.1
 }
 estate_dhimmi_development_of_communities_mod = {
 	local_development_cost = -0.05

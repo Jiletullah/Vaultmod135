@@ -932,7 +932,7 @@ vault_vassal_hordes = {
 		full_idea_group = influence_ideas 
 	}
 	
-	vassal_forcelimit_bonus = 0.75
+	vassal_forcelimit_bonus = 1
 	vassal_income = 0.15
 
 	effect = {}
@@ -1086,28 +1086,6 @@ vault_pow_recruitment_act = {
 	}
 }
 
-vault_vassal_general_draft = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = quantity_ideas
-		has_idea_group = influence_ideas   
-	}
-	
-	allow = {
-		full_idea_group = quantity_ideas
-		full_idea_group = influence_ideas
-	}
-	
-	leader_land_fire = 1
-	leader_land_shock = 1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0			
-	}
-}
 
 
 vault_seperate_marine_command = {

@@ -1172,10 +1172,10 @@ estate_nobles_nieszawa_privileges = {
 		}
 	}
 	penalties = {
-		technology_cost = 0.05
+		stability_cost_modifier = 0.2
 	}
 	benefits = {
-		stability_cost_modifier = -0.2
+		technology_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 0
@@ -1198,10 +1198,10 @@ estate_nobles_pacta_conventa = {
 		}
 	}
 	penalties = {
-		war_exhaustion_cost = 0.5
 		inflation_action_cost = 0.5
 	}
 	benefits = {
+		war_exhaustion_cost = -0.5
 	}
 	ai_will_do = {
 		factor = 0

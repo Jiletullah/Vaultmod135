@@ -285,7 +285,7 @@ march = {
 	military_focus = 1.5
 	base_liberty_desire = -15.0
 	can_be_annexed = no
-	forcelimit_to_overlord = 0.2
+	forcelimit_to_overlord = 0.1
 	manpower_to_overlord = 0.25
 	is_march = yes
 	forms_trade_companies = no
@@ -501,21 +501,16 @@ personal_union = {
 	enforce_culture = yes
 	siphon_income = yes
 	support_loyalists = yes
+	divert_trade = yes
 
 	# Modifiers:
 	modifier_overlord = {
 		modifier = union_subject
 	}
 	modifier_overlord = {
-		trigger = {
-			overlord = { has_government_attribute = personal_union_war_contribution }
-		}
 		modifier = pu_overlord_bonus
 	}
 	modifier_subject = {
-		trigger = {
-			overlord = { has_government_attribute = personal_union_war_contribution }
-		}
 		modifier = pu_subject_bonus
 	}
 

@@ -4,7 +4,7 @@ mercantilism = 25
 technology_group = western
 primary_culture = english
 add_accepted_culture = welsh
-add_accepted_culture = norman
+add_accepted_culture = normand
 religion = catholic
 capital = 236 # London
 national_focus = MIL
@@ -18,7 +18,6 @@ change_estate_land_share = {
 	share = -10
 }
 
-#1422.8.31 = { #Succession
 
 change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
 	estate = all

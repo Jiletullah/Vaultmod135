@@ -20,5 +20,5 @@ capital = 272 # Vilnius
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = incorruptible_personality
+	add_ruler_personality = well_connected_personality
 }

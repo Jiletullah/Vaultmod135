@@ -3,17 +3,24 @@ add_government_reform = steppe_horde
 primary_culture = mishary
 religion = sunni
 technology_group = nomad_group
-capital = 303	# Saratov
+capital = 464	# Astrakhan
 historical_rival = TUR
 historical_rival = KAZ
+historical_rival = CRI
+historical_rival = NOG
+historical_rival = SHY
+historical_rival = CHG
+historical_rival = OIR
+historical_rival = TRS
+add_accepted_culture = astrakhani
 religious_school = hanafi_school
 
 1432.1.1 = {
 	monarch = {
-		name = "Küchük Muhammad"
+		name = "Kï¿½chï¿½k Muhammad"
 		dynasty = "Genghisid"
 		adm = 3
-		dip = 3
+		dip = 2
 		mil = 2
 	}
 }

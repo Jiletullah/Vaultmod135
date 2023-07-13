@@ -30,7 +30,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 50
+		months = 6
 	}
 	
 	immediate = { 
@@ -145,12 +145,12 @@ country_event = {
 			}
 			tag = PLC
 		}
-		is_year = 1490
+		is_year = 1446
 		NOT = { is_year = 1500 }
 	}
 	
 	mean_time_to_happen = {
-		months = 50
+		months = 6
 	}
 	
 	option = {
@@ -159,7 +159,7 @@ country_event = {
 		add_mercantilism = 3
 		add_country_modifier = {
 			name = pol_statute_piotrkow
-			duration = 10950
+			duration = 3650
 		}
 	}
 	option = {
@@ -831,48 +831,7 @@ country_event = {
 	}
 }
 
-# The Sejm refuse to allow the mobilization of more troops
-country_event = {
-	id = flavor_pol.3738
-	title = "flavor_pol.EVTNAME3738"
-	desc = "flavor_pol.EVTDESC3738"
-	picture = LIBERUM_VETO_eventPicture
-	
-	trigger = {
-		is_or_was_tag = {
-			tag = POL
-		}
-		has_regency = no
-		has_country_flag = pol_pact_conventa_flag
-		NOT = {
-			has_ruler_modifier = pol_sejm_refuse_timer
-		}
-		government = monarchy
-	}
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	immediate = {
-		hidden_effect = {
-			add_ruler_modifier = {
-				name = pol_sejm_refuse_timer
-				hidden = yes
-			}
-		}
-	}
-	
-	option = {
-		name = "flavor_pol.EVTOPTOK"
-		add_ruler_modifier = { name = pol_sejm_refuse_troops } 
-		
-	}
-	option = {
-		name = "flavor_pol.EVTOPTA3738"
-		add_legitimacy = -20
-		add_stability = -1
-	}
-}
+
 
 # The Sejm comply to your policies
 country_event = {
@@ -912,45 +871,7 @@ country_event = {
 	}
 }
 
-# The Sejm veto all your policies
-country_event = {
-	id = flavor_pol.3744
-	title = "flavor_pol.EVTNAME3744"
-	desc = "flavor_pol.EVTDESC3744"
-	picture = LIBERUM_VETO_eventPicture
-	
-	trigger = {
-		has_regency = no
-		has_country_flag = pol_pact_conventa_flag
-		NOT = {
-			has_ruler_modifier = pol_sejm_refuse_timer
-		}
-		government = monarchy
-	}
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	immediate = {
-		hidden_effect = {
-			add_ruler_modifier = {
-				name = pol_sejm_refuse_timer
-				hidden = yes
-			}
-		}
-	}
-	
-	option = {
-		name = "flavor_pol.EVTOPTOK"
-		add_ruler_modifier = { name = pol_sejm_veto } 
-	}
-	option = {
-		name = "flavor_pol.EVTOPTA3738"
-		add_legitimacy = -20
-		add_stability = -1
-	}
 
-}
 
 # Nicolaus Copernicus
 country_event = {
@@ -1799,19 +1720,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
-		modifier = {
-			factor = 0.1
-			is_year = 1447
-		}
-		modifier = {
-			factor = 0.01
-			is_year = 1448
-		}
-		modifier = {
-			factor = 0.001
-			is_year = 1449
-		}
+		months = 1
 	}
 	
 	option = {

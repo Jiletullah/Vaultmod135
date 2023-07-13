@@ -1016,3 +1016,88 @@ united_netherlands = {
 	naval_forcelimit_modifier = 0.33
 
 }
+
+jihad = {
+	trigger = {
+		AND = {
+			tag = MOR
+			war_with = CAS
+			war_with = POR
+			NOT = {POR = {ai = yes}}
+		}
+	}
+
+	land_morale = 0.15
+	interest = -1
+}
+
+spirit_of_donskoi = {
+	trigger = {
+		OR = {
+			AND = {
+				tag = MOS
+				war_with = POL
+				war_with = GOL
+				NOT = {GOL = {ai = yes}}
+			}
+			AND = {
+				tag = MOS
+				defensive_war_with = GOL
+				NOT = {is_year = 1454}
+			}
+			AND = {
+				tag = MOS
+				defensive_war_with = POL
+				NOT = {is_year = 1454}
+			}
+		}
+	}
+
+	land_morale = 0.15
+	interest = -1
+}
+
+minor = {
+	trigger = {
+		AND = {
+			NOT = {total_development = 250}
+			NOT = {is_great_power = yes}
+			NOT = {is_nomad = yes}
+			NOT = {is_subject = yes}
+		}
+	}
+
+	ae_impact = -0.33
+	advisor_cost = -0.2
+	development_cost = -0.1
+	global_tax_income = 24
+	land_forcelimit = 6
+	global_manpower = 5
+
+
+}
+
+
+ai_development_buff = {
+	trigger = {
+		AND = {
+			ai = yes
+			any_owned_province = {
+				NOT = {development = 25}
+			}
+		}
+	}
+	development_cost = -0.25
+}
+
+
+fort_fix = {
+	trigger = {
+		OR = {
+			ai = yes
+			ai = no
+		}
+	}
+
+	fort_maintenance_modifier = -0.5
+}

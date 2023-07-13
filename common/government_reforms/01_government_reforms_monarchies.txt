@@ -2360,7 +2360,6 @@ principality = {
 			}
 		}
 	}
-	fixed_rank = 1
 	legacy_equivalent = principality_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
@@ -2373,10 +2372,12 @@ principality = {
 	}
 	modifiers = {
 		global_unrest = -1
-		global_regiment_cost = -0.05
-		governing_capacity = 200
+		global_regiment_cost = -0.1
+		global_missionary_strength = 0.02
+		governing_capacity = 300
+		leader_land_shock = 1
 		has_streltsy = yes
-		allowed_streltsy_fraction = 0.1
+		allowed_streltsy_fraction = 0.10
 	}
 	conditional = {
 		allow = { 
@@ -3428,27 +3429,12 @@ polish_elective_monarchy = {
 		has_dlc = "Lions of the North"
 	}
 	modifiers = {
-		global_unrest = -1
+		global_unrest = -2
 		max_absolutism = -30
 		nobles_influence_modifier = 0.05
-		reform_progress_growth = -0.2
+		can_recruit_hussars = yes
 	}
 
-	conditional = {
-		allow = { has_dlc = "Res Publica" }
-		is_elective = yes
-		custom_attributes = {
-			has_polish_election = yes
-			locked_government_type = yes
-		}
-	}
-
-	conditional = {
-		allow = { NOT = { has_dlc = "Res Publica" } }
-		custom_attributes = {
-			locked_government_type = yes
-		}
-	}
 	conditional = {
 		allow = {
 			OR = {
