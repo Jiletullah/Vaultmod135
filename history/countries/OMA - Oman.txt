@@ -15,8 +15,9 @@ religious_school = hanbali_school
 		adm = 4
 		dip = 4
 		mil = 3
-		clear_scripted_personalities = yes
-		add_ruler_personality = well_advised_personality
 	}
+
+	add_ruler_personality = well_advised_personality
+
 }
 

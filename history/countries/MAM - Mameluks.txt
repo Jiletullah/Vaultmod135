@@ -31,5 +31,4 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = entrepeneur_personality
 }

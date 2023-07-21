@@ -219,7 +219,7 @@ vassal = {
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.0
 	forcelimit_to_overlord = 0.1
-	manpower_to_overlord = 0.15
+	manpower_to_overlord = 0.10
 
 	relative_power_class = 2
 	should_quit_wars_on_activation = yes
@@ -418,10 +418,12 @@ appanage = {
 	allows_taking_land_without_independence = yes
 	forms_trade_companies = no
 	can_concentrate_development = no
-	liberty_desire_development_ratio = 0.25
+	liberty_desire_development_ratio = 0.15
 	trust_on_start = 0
-	base_liberty_desire = 35.0
+	base_liberty_desire = 0.0
 	military_focus = 1.2
+	manpower_to_overlord = 0.05
+	forcelimit_to_overlord = 0.12
 
 	relative_power_class = 1
 	should_quit_wars_on_activation = yes
@@ -654,9 +656,9 @@ crown_colony = {
 	can_send_missionary_to_subject = yes	
 	count = colony
 
-	forcelimit_to_overlord = 0.2
-	manpower_to_overlord = 0.2
-	naval_forcelimit_to_overlord = 0.05
+	forcelimit_to_overlord = 0.05
+	manpower_to_overlord = 0.15
+	naval_forcelimit_to_overlord = 0.1
 	sailors_to_overlord = 0.05
 
 	# Subject Interactions:

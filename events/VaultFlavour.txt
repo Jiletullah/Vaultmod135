@@ -265,7 +265,7 @@ country_event = {
 	}
 
 	option = {
-
+		name = "vault_flavor_spa_ARABTN"
 		create_union = ARA
 		add_historical_friend = ARA
 

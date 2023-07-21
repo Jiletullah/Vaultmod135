@@ -15,5 +15,4 @@ capital = 2149
 		MIL = 3
 	}
 	clear_scripted_personalities = yes
-	add_ruler_personality = entrepeneur_personality
 }

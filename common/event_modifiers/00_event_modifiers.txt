@@ -13894,8 +13894,7 @@ per_shia_conviction = {
 }
 
 vault_fra_lessons_of_hyw = {
-	artillery_power = 0.10
-	leader_siege = 1
+	artillery_levels_available_vs_fort = 2 
 }
 
 vault_porto_wine_distilleries = {
