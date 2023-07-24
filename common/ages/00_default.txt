@@ -367,7 +367,7 @@ age_of_reformation = {
 			allow = {
 				
 				OR = {
-				religion = protestant
+				religion = protestant				
 				religion = reformed
 				religion = anglican
 				religion = hussite

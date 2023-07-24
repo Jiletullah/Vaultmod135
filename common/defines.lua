@@ -135,7 +135,7 @@ NDiplomacy = {
 	CELESTIAL_EMPIRE_REFORM_COST = 80,				-- Mandate cost of enacting a new reform for the Emperor of China.
 	CELESTIAL_EMPIRE_REFORM_STABILITY_COST = 1,		-- Stability cost of enacting a new reform for the Emperor of China
 	CELESTIAL_EMPIRE_REFORM_MIN_VALUE = 80,			-- Minimum value of Mandate above which new reforms can be enacted.
-	DEFENDER_OF_FAITH_COST = 500, 					-- _DDEF_DEFENDER_OF_FAITH_COST_
+	DEFENDER_OF_FAITH_COST = 1000, 					-- _DDEF_DEFENDER_OF_FAITH_COST_
 	DEFENDER_OF_FAITH_MONTHS = 24, 					-- _DDEF_DEFENDER_OF_FAITH_MONTHS_ (Minimum months before it can be taken from another country with less prestige)
 	AMOUNT_OF_ACTIVE_CARDINALS = 7, 				-- Number of active Cardinals
 	AMOUNT_OF_FUTURE_CARDINALS = 5, 				-- Number of future Cardinals
@@ -633,7 +633,7 @@ NCountry = {
 
 	ALLOW_FEMALE_GENERALS = 0,
 	FEMALE_ADVISOR_CHANCE = 2,						-- If Women in History is enabled, chance of an advisor (or general if permitted) spawning as female
-	MAX_IDEA_GROUPS_FROM_SAME_CATEGORY = 0.5,
+	MAX_IDEA_GROUPS_FROM_SAME_CATEGORY = 0.35,
 
 	RANDOM_LUCKY_BASE_WEIGHT = 100,					-- Base weight given to each nation when rolling for random lucky
 	RANDOM_LUCKY_DEVELOPMENT_WEIGHT = 0.4,			-- Extra weight given for each base development when rolling for random luck

@@ -227,7 +227,7 @@ parish_registers_aspect = {
 		}
 	}
 	modifier = {
-		free_adm_policy = 1 
+		manpower_recovery_speed = 0.10 
 	}
 	ai_will_do = {
 		factor = 5

@@ -949,6 +949,8 @@ vault_papal_guards = {
 
 
 vault_foreign_drillmasters = {
+	monarch_power = MIL
+	
 	potential = {
 		has_idea_group = quality_ideas
 		has_idea_group = expansion_ideas

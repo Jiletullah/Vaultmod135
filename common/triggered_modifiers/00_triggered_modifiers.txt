@@ -1138,6 +1138,7 @@ vault_knights_of_rhodes = {
 	hostile_attrition = 5
 	garrison_size = 1
 	naval_forcelimit = 50
+	naval_morale = 0.10
 	naval_maintenance_modifier = -0.9
 	unrest = -20
 }
@@ -1157,4 +1158,18 @@ vault_victory_over_habsburgs = {
 	}
 
 	 monthly_ottoman_decadence = -1
+}
+
+
+vault_raids_of_knights = {
+	trigger = {
+		AND = {
+			tag = TUR
+			exists = KNI
+		}
+	}
+
+	global_tax_modifier = -0.10
+	trade_efficiency = -0.10
+	manpower_recovery_speed = -0.10
 }
