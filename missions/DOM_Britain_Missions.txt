@@ -1388,28 +1388,10 @@ gbr_ave_hundred_years_mission = {
 			}
 		}		
 		trigger = {
-			if = {
-				limit = {
-					exists = FRA
-				}
-				OR = {
-					war_with = FRA
-					custom_trigger_tooltip = {
-						tooltip = eng_war_france.tooltip
-						has_country_flag = rb_gave_up_maine
-					}
-					FRA = { is_subject_of = ROOT }
-					NOT = { owns_or_non_sovereign_subject_of = 177 }
-				}
-			}
-			else_if = {
-				limit = { 
-					NOT = { exists = FRA }
-				}
-				OR = {
-					owns_or_non_sovereign_subject_of = 183
-					183 = { owner = { war_with = ROOT } }
-					NOT = { owns_or_non_sovereign_subject_of = 177 }
+			OR = {
+				owns = 183
+				FRA = {
+					owns = 177
 				}
 			}
 		}		

@@ -1048,7 +1048,6 @@ spirit_of_donskoi = {
 			AND = {
 				tag = MOS
 				defensive_war_with = POL
-				NOT = {is_year = 1454}
 			}
 		}
 	}
@@ -1057,6 +1056,30 @@ spirit_of_donskoi = {
 	interest = -1
 }
 
+
+venice_defiant = {
+	trigger = {
+		OR = {
+			AND = {
+				tag = VEN
+				war_with = HAB
+				war_with = PAP
+				NOT = {VEN = {ai = yes}}
+			}
+			AND = {
+				tag = VEN
+				defensive_war_with = HAB
+				NOT = {is_year = 1475}
+			}
+		}
+	}
+
+	mercenary_discipline = 0.05
+	land_morale = 0.10
+	interest = -1
+}
+
+
 minor = {
 	trigger = {
 		AND = {
@@ -1064,6 +1087,7 @@ minor = {
 			NOT = {is_great_power = yes}
 			NOT = {is_nomad = yes}
 			NOT = {is_subject = yes}
+			NOT = {is_emperor = yes}
 		}
 	}
 
@@ -1100,4 +1124,37 @@ fort_fix = {
 	}
 
 	fort_maintenance_modifier = -0.5
+}
+
+vault_knights_of_rhodes = {
+	
+	trigger = {
+		tag = KNI
+	}
+	
+	
+	defensiveness = 2
+	max_hostile_attrition = 5
+	hostile_attrition = 5
+	garrison_size = 1
+	naval_forcelimit = 50
+	naval_maintenance_modifier = -0.9
+	unrest = -20
+}
+
+vault_victory_over_habsburgs = {
+	trigger = {
+		AND = {
+			tag = TUR
+			owns = 134
+			owns = 153
+			owns = 4128
+			owns = 137
+			owns = 131
+			owns = 154
+			owns = 4752
+		}
+	}
+
+	 monthly_ottoman_decadence = -1
 }

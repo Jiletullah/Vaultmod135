@@ -2201,13 +2201,12 @@ prussian_monarchy = {
 	legacy_equivalent = prussian_monarchy_legacy
 
 	modifiers = {
-		war_exhaustion = -0.02
 		global_unrest = -2
 		global_autonomy = -0.075
 		max_absolutism = 10
 		monarch_military_power = 3
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.33
 	}
 
 	conditional = {
@@ -2303,13 +2302,12 @@ prussian_monarchy_base = {
 	legacy_equivalent = prussian_monarchy_legacy
 
 	modifiers = {
-		war_exhaustion = -0.02
 		global_unrest = -2
 		global_autonomy = -0.075
 		max_absolutism = 10
 		monarch_military_power = 3
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.5
+		governing_capacity_modifier = -0.33
 	}
 
 	conditional = {
@@ -6200,43 +6198,6 @@ become_a_republic_reform = {
 	}
 }
 
-install_theocratic_government_reform = {
-	icon = "pope_highlighted"
-	allow_normal_conversion = yes
-	potential = {
-		is_revolutionary = no
-	}
-	trigger = {
-		NOT = { has_government_attribute_short_desc = locked_government_type }
-		is_emperor = no
-		NOT = { is_lesser_in_union = yes }
-		if = {
-			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
-			stability = 2
-		}
-	}
-	effect = {
-		set_country_flag = populists_in_government
-		if = {
-			limit = { NOT = { has_government_attribute = theocratic_monarchy_mechanic } }
-			add_stability = -3
-		}
-		change_government = theocracy
-		if = {
-			limit = {
-				tag = AVE
-			}
-			hidden_effect = {
-				country_event = {
-					id = flavor_gbr.20
-				}
-			}
-		}
-	}
-	ai = {
-		factor = 0
-	}
-}
 
 emperor_of_the_revolution_reform = {
 	icon = "emperor_of_the_revolution_reform"

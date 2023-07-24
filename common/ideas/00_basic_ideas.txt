@@ -975,18 +975,19 @@ infrastructure_ideas = {
 	}
 
 	state_efficiency = {
-		build_cost = -0.15
+		build_cost = -0.10
 	}
 	organised_construction = {
 		build_time = -0.33
 		great_project_upgrade_time = -0.2
 	}
 	efficient_construction_plans = {
-		great_project_upgrade_cost = -0.2
-	}
-	expanded_infrastructure_network = {
 		movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
+
+	}
+	expanded_infrastructure_network = {
+		great_project_upgrade_cost = -0.2
 	}
 	administrative_efficiency_idea = {
 		state_maintenance_modifier = -0.33

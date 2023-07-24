@@ -11740,7 +11740,7 @@ estate_cossacks_freedom_of_the_steppes_mod = {
 }
 estate_nomadic_tribes_freedom_of_the_steppes_mod = {
 	local_development_cost = -0.15
-	trade_goods_size = 0.1
+	trade_goods_size = 0.2
 }
 estate_dhimmi_development_of_communities_mod = {
 	local_development_cost = -0.05
@@ -13899,4 +13899,12 @@ vault_fra_lessons_of_hyw = {
 
 vault_porto_wine_distilleries = {
 	trade_goods_size = 1.5
+}
+
+vault_pilsen_beer = {
+	trade_goods_size = 3.0
+}
+
+vault_rhodes = {
+	province_trade_power_value = 10
 }

@@ -898,7 +898,7 @@ FRA_ideas_2 = {
 
 TUR_ideas = {
 	start = {
-		discipline = 0.05
+		land_morale = 0.10
 		tolerance_heathen = 3
 	}
 	
@@ -912,29 +912,27 @@ TUR_ideas = {
 	free = yes		
 	
 	millets = {
-		core_creation = -0.25
-		num_accepted_cultures = 1
+		global_unrest = -3
+		num_accepted_cultures = 2
 	}	
 	ghazi = {
 		manpower_recovery_speed = 0.2
 	}		
 	timariot_system = {
-		infantry_power = 0.05
-		infantry_cost = -0.1
+		cavalry_power = 0.10
+		cavalry_cost = -0.05
 	}
 	lawcode_of_suleiman_01 = {
-		global_tax_modifier = 0.15
-		reform_progress_growth = 0.1
+		core_creation = -0.20
 	}
 	autonmous_pashas = {
-		global_unrest = -2
+		global_tax_modifier = 0.15
 	}		
 	tulip_period = {
 		trade_efficiency = 0.10
 	}
 	imperial_school_of_naval_engineering = {
-		navy_tradition = 0.5
-		global_ship_cost = -0.1
+		artillery_power = 0.10
 	}
 }
 
@@ -1357,12 +1355,12 @@ VRN_ideas = {
 
 VEN_ideas = {
 	start = {
-		trade_steering = 0.33
-		allowed_marine_fraction = 0.2
+		naval_forcelimit_modifier = 0.33
+		shock_damage_received = -0.15
 	}
 	
 	bonus = {
-		shock_damage_received = -0.15
+		trade_steering = 0.33
 	}
 	
 	trigger = {
@@ -1371,8 +1369,8 @@ VEN_ideas = {
 	free = yes		
 	
 	venetian_arsenal = {
-		naval_forcelimit_modifier = 0.2
-		galley_power = 0.2
+		navy_tradition = 1
+		naval_morale = 0.10
 	}
 	printing_industry = {
 		reform_progress_growth = 0.2
@@ -1381,7 +1379,7 @@ VEN_ideas = {
 		trade_efficiency = 0.15
 	}
 	state_inquisition = {
-		global_spy_defence = 0.3
+		mercenary_discipline = 0.05
 		yearly_corruption = -0.05
 	}
 	conscription = {
@@ -1460,7 +1458,8 @@ PRU_ideas = {
 		army_tradition_decay = -0.01
 	}
 	army_professionalism = {
-		land_morale = 0.20
+		fire_damage_received = -0.10
+		land_morale = 0.05
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
@@ -1473,7 +1472,7 @@ PRU_ideas = {
 		global_regiment_recruit_speed = -0.10
 	}
 	religious_toleration = {
-		development_cost = -0.05
+		build_cost = -0.1
 		tolerance_heretic = 1
 	}
 }
@@ -1770,7 +1769,7 @@ PLC_LIT_ideas = {
 HAB_ideas = {
 	start = {
 		land_morale = 0.1
-		improve_relation_modifier = 0.3
+		inflation_reduction = 0.05
 	}
 	
 	bonus = {
@@ -1789,7 +1788,7 @@ HAB_ideas = {
 	free = yes		
 
 	imperial_ambitions = {
-		imperial_authority = 0.1
+		imperial_authority_value = 0.1
 		diplomatic_annexation_cost = -0.15
 	}
 	military_border = {
@@ -1797,8 +1796,7 @@ HAB_ideas = {
 		garrison_size = 0.1
 	}
 	fugger_banks = {
-		inflation_reduction = 0.05
-		interest = -0.5
+		interest = -0.25
 	}
 	habsburg_dominance = {
 		diplomatic_reputation = 2
@@ -2105,7 +2103,7 @@ JAP_ideas = {
 
 MAM_ideas = {
 	start = {
-		trade_efficiency = 0.1
+		enemy_core_creation = 0.2
 		cavalry_power = 0.15
 	}
 	
@@ -2879,12 +2877,12 @@ QNG_ideas = {
 
 PAL_ideas = {
 	start = {
-		global_tax_modifier = 0.10
-		diplomatic_upkeep = 1
+		core_creation = -0.15
+		reduced_liberty_desire = 15
 	}
 	
 	bonus = {
-		improve_relation_modifier = 0.3
+		global_manpower_modifier = 0.15
 	}
 	
 	trigger = {
@@ -2893,19 +2891,21 @@ PAL_ideas = {
 	free = yes		
 	
 	imperial_vicar_and_archsteward = {
-		diplomatic_reputation = 1
+		morale_damage_received = -0.10
 	}
 	heidelberg_university = {
 		advisor_cost = -0.1
 	}
 	center_of_reformation_in_southern_germany = {
-		rebel_support_efficiency = 0.20
+		development_cost = -0.10
+		land_forcelimit_modifier = 0.15
 	}
 	bibliotheca_palatina = {
 		technology_cost = -0.05
 	}
 	heidelberg_catechism = {
 		global_missionary_strength = 0.02
+		infantry_power = 0.05
 	}
 	hortus_palatinus = {
 		prestige_decay = -0.01	
@@ -3384,8 +3384,8 @@ GRA_ideas = {
 
 PAP_ideas = {
 	start = {
-		diplomatic_reputation = 1
-		religious_unity = 0.25
+		vassal_forcelimit_bonus = 0.5
+		ae_impact = -0.10
 	}
 
 	bonus = {
@@ -3398,7 +3398,7 @@ PAP_ideas = {
 	free = yes		
 	
 	ecclesiastical_primacy = {
-		tolerance_own = 2
+		tolerance_own = 3
 	}
 	papal_investiture_and_tithes = {
 		global_tax_modifier = 0.2
@@ -3407,7 +3407,7 @@ PAP_ideas = {
 		prestige_decay = -0.01
 	}
 	donation_of_constantine = {
-		fabricate_claims_cost = -0.25
+		manpower_recovery_speed = 0.15
 	}
 	centralize_the_states = {
 		production_efficiency = 0.1
@@ -3416,7 +3416,7 @@ PAP_ideas = {
 		free_dip_policy = 1
 	}
 	holy_father = {
-		ae_impact = -0.10
+		development_cost = -0.05
 	}
 }
 
@@ -3996,7 +3996,7 @@ NPL_ideas = {
 
 KNI_ideas = {
 	start = {
-		discipline = 0.05
+		coast_raid_range = 1
 		may_perform_slave_raid = yes
 	}
 	
@@ -14997,8 +14997,8 @@ SYN_ideas = {
 
 MOR_ideas = {
 	start = {
+		shock_damage = 0.15
 		core_creation = -0.15
-		trade_efficiency = 0.15
 	}
 	bonus = {
 		technology_cost = -0.05
@@ -15008,7 +15008,7 @@ MOR_ideas = {
 	}
 	free = yes
 	mor_powerful_viziers = {
-		shock_damage = 0.15
+		trade_efficiency = 0.15
 	}
 	mor_marabouts = {
 		idea_cost = -0.1
@@ -15988,11 +15988,11 @@ CLI_ideas = {
 
 WES_ideas = {
 	start = {
-		idea_cost = -0.1
-		land_forcelimit_modifier = 0.2
+		trade_efficiency = 0.10
+		land_forcelimit_modifier = 0.25
 	}
 	bonus = {
-		discipline = 0.05
+		infantry_power = 0.15
 	}
 	trigger = {
 		tag = WES
@@ -16003,15 +16003,13 @@ WES_ideas = {
 		morale_damage = 0.1
 	}
 	wes_westphalian_decentralisation  = {
-		state_maintenance_modifier = -0.15
-		development_cost = -0.05
+		development_cost = -0.1
 	}
 	wes_increased_conscription = {
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.25
 	}
 	wes_administrative_assimilation_of_rheinlanders = {
-		num_accepted_cultures = 1
-		advisor_cost = -0.1
+		num_accepted_cultures = 2
 	}
 	wes_taxation = {
 		global_tax_modifier = 0.1
@@ -16021,7 +16019,7 @@ WES_ideas = {
 		tolerance_heathen = 2
 	}
 	wes_cities_of_the_rhineland = {
-		production_efficiency = 0.15
+		production_efficiency = 0.10
 	}
 }
 

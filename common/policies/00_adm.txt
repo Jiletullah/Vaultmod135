@@ -567,7 +567,7 @@ vault_skillful_architects = {
 		full_idea_group = administrative_ideas
 	}	
 	
-	build_cost = -0.20
+	build_cost = -0.10
 	build_time = -0.33
 	
 	effect = {}

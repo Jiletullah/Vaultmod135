@@ -42,15 +42,6 @@ country_event = {
 			duration = 9125
 		}
 		add_splendor = 800
-		define_ruler = {
-			name = "Edward"
-			dynasty = "Plantagenet"
-			adm = 3
-			dip = 2
-			mil = 3
-			age = 24
-			claim = 99
-		}
 		ile_de_france_area = {
 			limit = {
 				NOT = { is_core = ROOT }
