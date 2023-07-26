@@ -868,7 +868,7 @@ vault_vassal_hordes = {
 		full_idea_group = influence_ideas 
 	}
 	
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.75
 	vassal_income = 0.15
 
 	effect = {}

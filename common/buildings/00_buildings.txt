@@ -400,12 +400,11 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 100
+	cost = 125
 	time = 12
 	modifier = {
-		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
-		local_governing_cost = -0.25
+		local_governing_cost = -0.15
 		allowed_num_of_buildings = 1
 	}
 	on_built = {

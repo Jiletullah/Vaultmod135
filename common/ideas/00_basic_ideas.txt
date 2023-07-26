@@ -654,7 +654,7 @@ expansion_ideas = {
 	}
 
 	additional_colonists = {
-		core_creation = -0.2
+		core_creation = -0.15
 	}
 	additional_merchants = {
 		province_warscore_cost = -0.1
@@ -664,7 +664,7 @@ expansion_ideas = {
 		global_monthly_devastation = -0.1
 	}
 	vice_roys  = {
-		administrative_efficiency = 0.05
+		unjustified_demands = -0.10
  	}
 	additional_diplomats = {
 		years_of_nationalism = -10
@@ -841,7 +841,7 @@ influence_ideas = {
 	}
 	postal_service = {
 		vassal_manpower_bonus = 0.25
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.75
 		vassal_naval_forcelimit_bonus = 0.5
 	}
 	marcher_lords = {

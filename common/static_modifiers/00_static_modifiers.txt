@@ -387,8 +387,8 @@ pu_subject_bonus = {
 }
 
 pu_overlord_bonus = {
-	global_manpower = 10
-	global_tax_income = 60
+	global_manpower = 8
+	global_tax_income = 48
 }
 
 gbr_emperor_of_india_subject_bonus = {

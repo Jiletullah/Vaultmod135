@@ -1973,8 +1973,8 @@ expanded_devshirme_system_reform = {
 	}
 	modifiers = {
 		special_unit_forcelimit = 0.1
-		vassal_forcelimit_bonus = 0.15
 		vassal_manpower_bonus = 0.1
+		tolerance_heathen = 1
 	}
 	effect = {
 		add_country_modifier = {
