@@ -2697,11 +2697,11 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
+		development_cost = -0.10
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2710,10 +2710,11 @@ ITA_ideas = {
 	free = yes
 	
 	no_a_geographical_construct = {
-		land_morale = 0.1
+		defensiveness = 0.20
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.2
+		infantry_power = 0.10
+		morale_damage_received = -0.10
 	}
 	path_to_citizenship = {
 		core_creation = -0.25
